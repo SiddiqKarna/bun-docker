@@ -10,6 +10,6 @@ const server = Bun.serve({
 
 console.log(`[${NODE_ENV}] Listening on port ${server.port}`);
 
-setInterval(() => {
+setTimeout(() => {
     process.exit(1);
-}, 10 * 1000)
+}, 30 * 1000)
