@@ -4,6 +4,7 @@ const NODE_ENV = process.env.NODE_ENV ?? "development";
 const server = Bun.serve({
   port: PORT,
   fetch() {
+    process.exit(1);
     return new Response("Welcome to Bun!");
   },
 });
