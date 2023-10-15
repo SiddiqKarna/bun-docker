@@ -11,5 +11,5 @@ const server = Bun.serve({
 console.log(`[${NODE_ENV}] Listening on port ${server.port}`);
 
 setTimeout(() => {
-    process.exit(1);
+    throw new Error('Error:Testing');
 }, 30 * 1000)
